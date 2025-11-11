@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Evaluation Reports | Hadoop Portfolio</title>
+    <link rel="stylesheet" href="reports.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <header class="hero">
+        <div class="hero-content">
+            <a class="back-link" href="index.html">← Back to Portfolio</a>
+            <p class="eyebrow">Hadoop Ecosystem Coursework</p>
+            <h1>Evaluation Reports</h1>
+            <p>
+                Explore the execution artifacts from Evaluation 3 alongside the strategic project plan prepared for
+                Evaluation 4. Each section highlights objectives, workflows, and deliverables with quick links to
+                scripts, datasets, and supporting documents.
+            </p>
+        </div>
+        <div class="hero-actions">
+            <a class="btn primary" href="#evaluation-3">Evaluation 3</a>
+            <a class="btn outline" href="#evaluation-4">Evaluation 4</a>
+            <a class="btn ghost" href="../evaluations/EVALUATION_PORTFOLIO.md">Download Summary</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="evaluation-3" class="section">
+            <div class="section-header">
+                <span class="tag">Execution Report</span>
+                <h2>Evaluation 3 — Apache Pig &amp; Apache Hive</h2>
+                <p>
+                    Demonstrates end-to-end proficiency in loading data to HDFS, authoring Pig Latin pipelines,
+                    executing Hive analytics, and exporting insights for visualization.
+                </p>
+                <a class="link" href="../evaluations/EVALUATION_3_REPORT.md" target="_blank" rel="noopener">
+                    View original markdown report
+                </a>
+            </div>
+
+            <div class="content-grid">
+                <article class="card">
+                    <h3>Overview</h3>
+                    <p>
+                        A comprehensive walkthrough of Pig and Hive workflows covering dataset ingest, relational
+                        operators, complex data types, UDF implementation, and visualization.
+                    </p>
+                    <ul class="bullet-list">
+                        <li>HDFS ingestion and Pig-based data exploration</li>
+                        <li>Relational operators (FILTER, JOIN, GROUP, ORDER)</li>
+                        <li>Eval functions, tuples, bags, and maps</li>
+                        <li>Word count pipelines across Pig and Hive</li>
+                    </ul>
+                </article>
+
+                <article class="card">
+                    <h3>Apache Pig Workflow</h3>
+                    <div class="pill-grid">
+                        <span>Dataset upload to <code>/input</code></span>
+                        <span>Pig script execution (<code>pig/wordcount.pig</code>)</span>
+                        <span>Relational ops demonstration</span>
+                        <span>Eval functions (SUM, AVG, COUNT)</span>
+                        <span>Complex data types modelling</span>
+                    </div>
+                    <footer class="card-footer">
+                        <a class="btn ghost" href="../pig/wordcount.pig" target="_blank" rel="noopener">
+                            Pig Word Count Script
+                        </a>
+                    </footer>
+                </article>
+
+                <article class="card">
+                    <h3>Apache Hive Workflow</h3>
+                    <ul class="bullet-list">
+                        <li>Created tables in TextFile, ORC, and RCFile formats</li>
+                        <li>Authored SELECT, JOIN, GROUP BY, and partition queries</li>
+                        <li>Implemented and deployed <code>SimpleUDF.java</code></li>
+                        <li>Exported aggregate metrics for visualization</li>
+                    </ul>
+                    <footer class="card-footer">
+                        <a class="btn ghost" href="../hive/wordcount.hql" target="_blank" rel="noopener">
+                            Hive Word Count Query
+                        </a>
+                        <a class="btn ghost" href="../hive/udf/SimpleUDF.java" target="_blank" rel="noopener">
+                            Hive UDF Source
+                        </a>
+                    </footer>
+                </article>
+
+                <article class="card highlight">
+                    <h3>Outputs &amp; Evidence</h3>
+                    <p>
+                        Execution outputs are archived for reproducibility alongside visualization assets.
+                    </p>
+                    <div class="asset-grid">
+                        <a href="../output/pig_wordcount/000000_0" target="_blank" rel="noopener">
+                            Pig Word Count Results
+                        </a>
+                        <a href="../output/dept_salary_stats/000000_0" target="_blank" rel="noopener">
+                            Hive Department Stats
+                        </a>
+                        <a href="../visualizations/department_salary_stats.png" target="_blank" rel="noopener">
+                            Department Salary Chart
+                        </a>
+                        <a href="../visualization/create_visualization.py" target="_blank" rel="noopener">
+                            Visualization Script
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="evaluation-4" class="section alt">
+            <div class="section-header">
+                <span class="tag">Project Plan</span>
+                <h2>Evaluation 4 — E-Commerce Analytics Platform</h2>
+                <p>
+                    A strategic roadmap detailing architecture, analytics objectives, timelines, and deliverables for a
+                    comprehensive big data project built on the Hadoop ecosystem.
+                </p>
+                <a class="link" href="../evaluations/EVALUATION_4_PROJECT_PLAN.md" target="_blank" rel="noopener">
+                    View original markdown plan
+                </a>
+            </div>
+
+            <div class="content-grid">
+                <article class="card">
+                    <h3>Project Vision</h3>
+                    <p>
+                        Build an “E-Commerce Sales Analytics Platform” that unifies batch, ETL, SQL analytics, and
+                        real-time processing to generate business insights and dashboards.
+                    </p>
+                    <ul class="bullet-list">
+                        <li>Process large-scale transaction data (CSV/JSON)</li>
+                        <li>Integrate MapReduce, Pig, Hive, and Spark workloads</li>
+                        <li>Deliver visualizations and executive reporting</li>
+                    </ul>
+                </article>
+
+                <article class="card">
+                    <h3>Architecture Blueprint</h3>
+                    <p>
+                        The layered architecture guides data from ingestion to actionable insights, with explicit tooling
+                        decisions for each stage.
+                    </p>
+                    <div class="architecture">
+                        <span>Data Sources → HDFS</span>
+                        <span>MapReduce (Batch KPIs)</span>
+                        <span>Pig (ETL)</span>
+                        <span>Hive (SQL Warehouse)</span>
+                        <span>Spark (Real-time)</span>
+                        <span>Visualizations &amp; Dashboards</span>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <h3>Implementation Phases</h3>
+                    <div class="timeline">
+                        <div>
+                            <h4>Phase 1</h4>
+                            <p>Data ingestion design and quality checks.</p>
+                        </div>
+                        <div>
+                            <h4>Phase 2–3</h4>
+                            <p>MapReduce analytics and Pig ETL pipelines.</p>
+                        </div>
+                        <div>
+                            <h4>Phase 4</h4>
+                            <p>Hive warehouse, table formats, partitions, UDFs.</p>
+                        </div>
+                        <div>
+                            <h4>Phase 5–6</h4>
+                            <p>Advanced analytics, visualization, and reporting.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card highlight">
+                    <h3>Deliverables &amp; Metrics</h3>
+                    <p>
+                        Success criteria cover technical implementation, data scale, analytics accuracy, and
+                        documentation depth.
+                    </p>
+                    <ul class="metric-list">
+                        <li>Process &amp; analyze 1M+ transactions</li>
+                        <li>Produce dashboards and executive reports</li>
+                        <li>Maintain well-commented, production-ready code</li>
+                        <li>Document setup, execution, and assumptions</li>
+                    </ul>
+                    <footer class="card-footer">
+                        <a class="btn ghost" href="../PROJECT_SUMMARY.md" target="_blank" rel="noopener">
+                            Project Summary
+                        </a>
+                        <a class="btn ghost" href="../README.md" target="_blank" rel="noopener">
+                            Setup Instructions
+                        </a>
+                    </footer>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© <span id="year"></span> Anirudh. Evaluation reports rendered for clarity.</p>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
+
