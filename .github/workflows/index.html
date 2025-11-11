@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Hadoop Ecosystem Projects</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <header class="hero">
+        <nav class="nav">
+            <div class="logo">Anirudh | Big Data Engineer</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#evaluations">Evaluations</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+        <div class="hero-content">
+            <h1>Hadoop Ecosystem Portfolio</h1>
+            <p>
+                Hands-on projects and strategic planning across Hadoop, Pig, Hive, and
+                visualization pipelines. Explore evaluation artifacts, architecture
+                plans, and outcomes that demonstrate end-to-end Big Data mastery.
+            </p>
+            <div class="hero-actions">
+                <a class="btn primary" href="#evaluations">View Evaluations</a>
+                <a class="btn secondary" href="../evaluations/EVALUATION_PORTFOLIO.md">Download Summary</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="section about">
+            <div class="section-header">
+                <h2>About</h2>
+                <p>
+                    Data engineer with a focus on designing and implementing scalable
+                    analytics pipelines. This portfolio highlights Evaluation 3 and 4
+                    deliverables, combining technical execution with project leadership.
+                </p>
+            </div>
+            <div class="about-grid">
+                <article>
+                    <h3>Evaluation 3</h3>
+                    <p>
+                        Delivered Apache Pig and Hive workflows that load data into HDFS,
+                        apply relational transformations, develop custom Hive UDFs, and
+                        export insights to visualization layers.
+                    </p>
+                    <a class="link" href="../evaluations/EVALUATION_3_REPORT.md">Read the report →</a>
+                </article>
+                <article>
+                    <h3>Evaluation 4</h3>
+                    <p>
+                        Architected the “E-Commerce Sales Analytics Platform,” outlining a
+                        multi-phase roadmap that bridges ingestion, batch/real-time
+                        analytics, and dashboard delivery.
+                    </p>
+                    <a class="link" href="../evaluations/EVALUATION_4_PROJECT_PLAN.md">View the project plan →</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="evaluations" class="section evaluations">
+            <div class="section-header">
+                <h2>Evaluations</h2>
+                <p>
+                    Browse the highlights, artifacts, and capabilities demonstrated
+                    across the evaluations.
+                </p>
+            </div>
+            <div class="cards">
+                <article class="card">
+                    <h3>Pig & Hive Operations</h3>
+                    <ul>
+                        <li>Relational operators &amp; eval functions</li>
+                        <li>Complex data types and word count pipelines</li>
+                        <li>Multi-format Hive tables with partitions</li>
+                    </ul>
+                    <div class="card-actions">
+                        <a class="btn ghost" href="../pig/wordcount.pig">Pig script</a>
+                        <a class="btn ghost" href="../hive/wordcount.hql">Hive query</a>
+                    </div>
+                </article>
+                <article class="card">
+                    <h3>Hive UDF Extensions</h3>
+                    <ul>
+                        <li>Custom Java UDF for string capitalization</li>
+                        <li>Reusable jar packaging and deployment</li>
+                        <li>Integrated analytics within HiveQL</li>
+                    </ul>
+                    <div class="card-actions">
+                        <a class="btn ghost" href="../hive/udf/SimpleUDF.java">View UDF</a>
+                        <a class="btn ghost" href="../visualizations/department_salary_stats.png">Visualization</a>
+                    </div>
+                </article>
+                <article class="card">
+                    <h3>Project Architecture</h3>
+                    <ul>
+                        <li>HDFS data lake with CSV/JSON ingestion</li>
+                        <li>Layered processing across Hadoop, Pig, Hive, Spark</li>
+                        <li>KPIs, dashboards, and success metrics</li>
+                    </ul>
+                    <div class="card-actions">
+                        <a class="btn ghost" href="../evaluations/EVALUATION_4_PROJECT_PLAN.md">Architecture doc</a>
+                        <a class="btn ghost" href="../visualizations/">Visualization assets</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="skills" class="section skills">
+            <div class="section-header">
+                <h2>Skills & Tools</h2>
+                <p>
+                    Core strengths that power the Hadoop ecosystem projects and
+                    evaluation deliverables.
+                </p>
+            </div>
+            <div class="skill-tags">
+                <span>Hadoop MapReduce</span>
+                <span>Apache Pig</span>
+                <span>Apache Hive</span>
+                <span>Hive UDFs</span>
+                <span>Data Visualization</span>
+                <span>Python</span>
+                <span>Java</span>
+                <span>HDFS</span>
+                <span>Analytics Roadmapping</span>
+                <span>ETL Pipelines</span>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact">
+            <div class="section-header">
+                <h2>Contact</h2>
+                <p>Interested in collaborating? Reach out using the form.</p>
+            </div>
+            <form class="contact-form" id="contactForm">
+                <label>
+                    Name
+                    <input type="text" name="name" required />
+                </label>
+                <label>
+                    Email
+                    <input type="email" name="email" required />
+                </label>
+                <label>
+                    Message
+                    <textarea name="message" rows="4" required></textarea>
+                </label>
+                <button type="submit" class="btn primary">Send Message</button>
+                <p class="form-status" id="formStatus"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© <span id="year"></span> Anirudh. Built with the Hadoop ecosystem in mind.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
